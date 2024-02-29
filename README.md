@@ -1,0 +1,2 @@
+# Tip-Calculator
+  The Tip Calculator is a web application developed using HTML, CSS, and JavaScript, operating exclusively on the frontend. Users input bill amounts and desired tip percentages, with the calculator instantly computing the tip amount and total bill. Its intuitive interface simplifies the process, allowing users to adjust parameters effortlessly. The application does not require backend processing or server-side scripting, making it lightweight and easily accessible on any web-enabled device.
