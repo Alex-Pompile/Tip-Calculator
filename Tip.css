@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0.4px;
+}
+
+h1{
+color: #003e68;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.image{
+    width: 20%; 
+    height: auto;; 
+    border-radius: 10px; 
+    position: absolute; 
+    left: 12; 
+    top: 10px;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(100deg,#5b5aff, #38b9f9, #38a3a5, #57cc99, #b8ffc9, #e5fde7,#ffffff) fixed;
+    background-size: 160% 160%;
+    background-repeat: no-repeat;
+    animation: colorAnimation 10s infinite alternate cubic-bezier(0.25, 0.1, 0.25, 1);}
+
+
+    .container{
+        background-color: #ffffff82;
+        width: 450px;
+        padding: 40px 50px;
+        border-radius: 40px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 48%;
+        left: 50%;
+        box-shadow:  9px 2px 40px 10px rgb(0, 0, 0);
+    }
+
+
+
+
+
+.container:hover {
+    box-shadow:  0 0 20px #000000;
+    transition: box-shadow 1s ease;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.lbl{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #22577a;
+    font-weight: 400;
+}
+
+.val{
+    color: #22577a;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.input-box{
+    background-color: #38a3a5;
+    color: #57cc99;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-box:hover {
+    background-color: #57cc99;
+    transition: background-color 0.5s ease;
+    color: #003e68;
+}
+
+.input-box:focus {
+    box-shadow: 0 0 5px rgba(87, 204, 153, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+
+#bill{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    text-align: right;
+    color: #80ed99;
+    cursor: pointer;
+}
+
+#bill:hover{
+    color: #22577a;
+    transition: background-color 0.5s ease;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #38a3a5;
+}
+
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+input[type="range"]:not(:last-child){
+    margin-bottom: 5px;
+}
+
+section:not(:last-child){
+    margin-bottom: 40px;
+}
+
+section:not(:first-child){
+    margin-top: 40px;
+}
+
+section:last-child{
+    background-color: #57cc99;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section:last-child .val,
+section:last-child .lbl{
+    color: #92f2a8;
+}
+
+
